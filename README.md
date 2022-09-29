@@ -72,29 +72,11 @@ If a user clicks on a song, it will bring up a modal with the details + an embed
 
 Some songs have been:
 Removed
-- Higher
-- Drop it
 
 Added
-- She Shines Under the Mirror Ball
-- Let's DANCE aROUND!!
-- Mermaid girl
-- MOVE! (We Keep It Movin')
-- DUAL STRIKER
-- DEADLOCK(STARDOM Remix)
-- Sunshine let me find a way
-- Easy Peasy
-- Go Down
-
-- Spark festival 2022
-- Golden Palms
-- Let's party
-- Ignited Night
-- Neon Rider
-- Catastrophic Dance
-- Without Words
-- Oboro Cybernetics
-- Sweet Bordeaux Nightmare
+- Make That Body
+- Warpstep
+- Touch My Body
 
 
 
