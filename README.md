@@ -30,9 +30,9 @@ The backend is available to access online by accessing the API.
 
 The frontend will be put into a seperate repo (link here)
 
---- ### 2.1 Create card ---
+<s> ### 2.1 Create card 
 
---- A card which stores all the information from one song.
+ A card which stores all the information from one song.
 - genre
 - song
 - artist
@@ -43,7 +43,7 @@ The frontend will be put into a seperate repo (link here)
 - chinalocked
 - japanonly
 - koreaonly
-- image (Not available yet, just have a space for the jacket) ---
+- image (Not available yet, just have a space for the jacket) </s>
 
 ### 2.2 Data Persistence
 
