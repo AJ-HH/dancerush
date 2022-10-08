@@ -60,9 +60,9 @@ Show all the songs in a list within the cards and only access the server when th
 - Search by locked (Simple checkbox)
 Refer to taiko web implementation for ideas
 
---- ### 2.4 Song modal ---
+<s> ### 2.4 Song modal
 
---- If a user clicks on a song, it will bring up a modal with the details + an embedded video showing the chart ---
+If a user clicks on a song, it will bring up a modal with the details + an embedded video showing the chart </s>
 
 ## 3. Extra stuff
 
@@ -74,14 +74,14 @@ Removed
 Added
 
 
---- ### 3.2 Song jacket ---
+<s> ### 3.2 Song jacket 
 
---- Get the list of the song jackets and add them to the cards ---
+Get the list of the song jackets and add them to the cards
 
---- ### 3.3 Aesthetic details ---
+### 3.3 Aesthetic details
 
---- Blue #0ca0f6 ---
---- Pink-purple #c677e2 ---
+Blue #0ca0f6
+Pink-purple #c677e2 </s>
 
 ### 3.4 Explanation on How to Use
 
