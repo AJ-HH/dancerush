@@ -30,22 +30,20 @@ The backend is available to access online by accessing the API.
 
 The frontend will be put into a seperate repo (link here)
 
-### 2.1 Create card
+--- ### 2.1 Create card ---
 
-A card which stores all the information from one song.
+--- A card which stores all the information from one song.
 - genre
 - song
 - artist
 - bpm
 - easy
-- noteseasy
 - normal
-- notesnormal
 - unlocked
 - chinalocked
 - japanonly
 - koreaonly
-- image (Not available yet, just have a space for the jacket)
+- image (Not available yet, just have a space for the jacket) ---
 
 ### 2.2 Data Persistence
 
@@ -53,41 +51,37 @@ Ideally, the songlist api will only be called when necessary. Otherwise, the dat
 Show all the songs in a list within the cards and only access the server when the data is no longer available.
 
 ### 2.3 Search bar and options 
-- Search by character (string matching)
-- Search by difficulty (normal:3)
-- Search by difficulty (easy:5)
-- Search by artist (artist:zekk)
-- Search by category (category:edm)
-- Search by bpm? (bpm:>120)
-- Search by locked (locked:yes)
+- Search by character (string matching + aliases)
+- Search by difficulty (sliding scale)
+- Search by difficulty (sliding scale)
+- Search by artist (Separate search bar + aliases)
+- Search by category (multiple choice boxes)
+- Search by bpm (sliding scale)
+- Search by locked (Simple checkbox)
 Refer to taiko web implementation for ideas
 
-### 2.4 Song modal
+--- ### 2.4 Song modal ---
 
-If a user clicks on a song, it will bring up a modal with the details + an embedded video showing the chart
+--- If a user clicks on a song, it will bring up a modal with the details + an embedded video showing the chart ---
 
 ## 3. Extra stuff
 
-### 3.1 Update the list
+### 3.1 Update the list (Done for now)
 
 Some songs have been:
 Removed
 
 Added
-- Make That Body
-- Warpstep
-- Touch My Body
 
 
+--- ### 3.2 Song jacket ---
 
-### 3.2 Song jacket
+--- Get the list of the song jackets and add them to the cards ---
 
-Get the list of the song jackets and add them to the cards
+--- ### 3.3 Aesthetic details ---
 
-### 3.3 Aesthetic details
-
-Blue #0ca0f6
-Pink-purple #c677e2
+--- Blue #0ca0f6 ---
+--- Pink-purple #c677e2 ---
 
 ### 3.4 Explanation on How to Use
 
