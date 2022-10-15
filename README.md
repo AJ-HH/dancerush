@@ -26,6 +26,10 @@ it will get the list of all songs.
 
 The backend is available to access online by accessing the API.
 
+### 1.3 Querying data
+
+Currently, the frontend can create a json of the different search terms. Using this json, it should filter through the database using SQL
+
 ## 2. Frontend
 
 The frontend will be put into a seperate repo (link here)
@@ -58,7 +62,6 @@ Show all the songs in a list within the cards and only access the server when th
 - Search by category (multiple choice boxes)
 - Search by bpm (sliding scale)
 - Search by locked (Simple checkbox)
-Refer to taiko web implementation for ideas
 
 <s> ### 2.4 Song modal
 
@@ -69,10 +72,12 @@ If a user clicks on a song, it will bring up a modal with the details + an embed
 ### 3.1 Update the list (Done for now)
 
 Some songs have been:
+
 Removed
 
 Added
-
+- 2022 Recharts
+- So What
 
 <s> ### 3.2 Song jacket 
 
