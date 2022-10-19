@@ -27,12 +27,11 @@ public class SongRepositoryImpl implements SongRepositoryCustom {
 
         Root<Song> s = cq.from(Song.class);
         List<Predicate> finalPredicates = new ArrayList<>();
-
-        if (song != "") {
-            finalPredicates.add(cb.like(s.get("song"), "%" + song.toLowerCase() + "%"));
+        if (!song.equals("")) {
+            finalPredicates.add(cb.like(cb.lower(s.get("song")), "%" + song.toLowerCase() + "%"));
         }
-        if (artist != "") {
-            finalPredicates.add(cb.like(s.get("artist"), "%" + artist.toLowerCase() + "%"));
+        if (!artist.equals("")) {
+            finalPredicates.add(cb.like(cb.lower(s.get("artist")), "%" + artist.toLowerCase() + "%"));
         }
         if (unlocked == true){
             finalPredicates.add(cb.equal(s.get("unlocked"), unlocked));
@@ -55,11 +54,11 @@ public class SongRepositoryImpl implements SongRepositoryCustom {
         }
 
         if(normal.length == 2 && (normal[0] != 1 || normal[1] != 10)){
-            finalPredicates.add(cb.between(s.get("easy"), easy[0], easy[1]));
+            finalPredicates.add(cb.between(s.get("normal"), normal[0], normal[1]));
         }
 
         cq.where(finalPredicates.toArray(new Predicate[0]));
-        return entityManager.createQuery(cq).getResultList();
+        return entityManager.createQuery(cq).setFirstResult(0).setMaxResults(10).getResultList();
     }
 
 }
