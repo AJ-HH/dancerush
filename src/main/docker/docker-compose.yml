@@ -1,0 +1,30 @@
+version: '3.7'
+
+services:
+  app:
+    image: 'dancerush:latest'
+    build:
+      context: .
+    container_name: app
+    depends_on:
+      - db
+    links:
+      - db
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/dancerush_songs
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=abcde304
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=validate
+    ports:
+      - 8080:8080
+          
+  db:
+    image: 'postgres:13.1-alpine'
+    container_name: db
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=abcde304
+    volumes:
+      - ./sql/init.sql:/docker-entrypoint-initdb.d/init.sql
