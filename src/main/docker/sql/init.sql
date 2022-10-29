@@ -1,5 +1,3 @@
-DROP DATABASE IF EXISTS dancerush_songs;
-
 CREATE DATABASE dancerush_songs
     WITH
     OWNER = postgres
@@ -9,8 +7,6 @@ CREATE DATABASE dancerush_songs
     TABLESPACE = pg_default
     CONNECTION LIMIT = -1
     TEMPLATE template0;
-
-DROP SCHEMA IF EXISTS public ;
 
 CREATE SCHEMA IF NOT EXISTS public
     AUTHORIZATION postgres;
@@ -22,12 +18,14 @@ GRANT ALL ON SCHEMA public TO PUBLIC;
 
 GRANT ALL ON SCHEMA public TO postgres;
 
+\c dancerush_songs
+
 CREATE TABLE IF NOT EXISTS public.song
 (
-    id integer NOT NULL,
-    genre text COLLATE pg_catalog."default",
-    song text COLLATE pg_catalog."default",
-    artist text COLLATE pg_catalog."default",
+    id integer,
+    genre text,
+    song text, 
+    artist text,
     bpm integer,
     easy integer,
     noteseasy integer,
@@ -37,15 +35,15 @@ CREATE TABLE IF NOT EXISTS public.song
     chinalocked boolean,
     japanonly boolean,
     koreaonly boolean,
-    thumbnail text COLLATE pg_catalog."default",
-    easyurl text COLLATE pg_catalog."default",
-    normalurl text COLLATE pg_catalog."default",
+    thumbnail text,
+    easyurl text,
+    normalurl text,
     CONSTRAINT dancerush_songs_pkey PRIMARY KEY (id)
 )
 
 TABLESPACE pg_default;
 
-ALTER TABLE IF EXISTS public.song
+ALTER TABLE IF EXISTS public.Song
     OWNER to postgres;
 
 GRANT ALL ON TABLE public.song TO postgres;

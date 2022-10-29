@@ -6,10 +6,9 @@ import javax.persistence.Table;
 
 
 @Entity // This tells Hibernate to make a table out of this class
-@Table(name = "song", schema = "public")
 public class Song {
     @Id
-    private int id;
+    private Integer id;
 
     private String genre;
     private String song;
