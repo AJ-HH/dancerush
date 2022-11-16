@@ -1,5 +1,0 @@
-http://localhost:8080/songlist/advanced-search?song=about&artist=&genre=&bpm=92,232&easy=1,10&normal=1,10&unlocked=false
-
-
-http://localhost:8080/songlist/advanced-search?song=age&artist=&genre=&bpm=92,232&easy=1,10&normal=1,10&unlocked=false
-Every parameter must be included and unlocked must be defined as false or true
