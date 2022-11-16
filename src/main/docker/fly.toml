@@ -7,8 +7,8 @@ processes = []
 
 [env]
   SPRING_DATASOURCE_USERNAME="postgres"
-  SPRING_DATASOURCE_URL="jdbc:postgresql://drs-postgres.internal:5432/dancerush_songs"
-  SPRING_DATASOURCE_PASSWORD="gUziEsbJ6rlndGw"
+  SPRING_DATASOURCE_URL=$DATABASE_URL
+  SPRING_DATASOURCE_PASSWORD=$DATABASE_PASSWORD
   SPRING_JPA_HIBERNATE_DDL_AUTO="validate"
 
 [experimental]

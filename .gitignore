@@ -5,7 +5,7 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 /config/
-!**/src/main/docker/
+/src/main/docker/docker-compose.yml
 
 ### STS ###
 .apt_generated
