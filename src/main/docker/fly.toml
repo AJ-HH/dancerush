@@ -1,5 +1,5 @@
 # fly.toml file generated for dancerush on 2022-10-31T19:21:56+11:00
-# To deploy: /mnt/c/Users/Andrew/.fly/bin/fly.exe deploy
+# To deploy: /mnt/c/Users/Andrew/.fly/bin/fly.exe deploy -a dancerush
 app = "dancerush"
 kill_signal = "SIGINT"
 kill_timeout = 5
