@@ -1,5 +1,8 @@
 # fly.toml file generated for dancerush on 2022-10-31T19:21:56+11:00
 # To deploy: /mnt/c/Users/Andrew/.fly/bin/fly.exe deploy -a dancerush
+# Only necessary when the Java code itself is changed
+# If the SQL needs to be updated, 
+
 app = "dancerush"
 kill_signal = "SIGINT"
 kill_timeout = 5
@@ -7,8 +10,8 @@ processes = []
 
 [env]
   SPRING_DATASOURCE_USERNAME="postgres"
-  SPRING_DATASOURCE_URL=${{ secrets.DATABASE_URL }}
-  SPRING_DATASOURCE_PASSWORD=${{ secrets.DATABASE_PASSWORD }}
+  SPRING_DATASOURCE_URL=$DATABASE_URL
+  SPRING_DATASOURCE_PASSWORD=$DATABASE_PASSWORD
   SPRING_JPA_HIBERNATE_DDL_AUTO="validate"
 
 [experimental]
