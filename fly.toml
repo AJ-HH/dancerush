@@ -1,4 +1,4 @@
-# fly.toml file generated for dancerush on 2023-01-09T20:27:52+11:00
+# fly.toml file generated for dancerush on 2023-01-07T21:09:56+11:00
 
 app = "dancerush"
 kill_signal = "SIGINT"
@@ -7,9 +7,9 @@ processes = []
 
 [env]
   SPRING_DATASOURCE_USERNAME="postgres"
-  SPRING_JPA_HIBERNATE_DDL_AUTO="validate"
   SPRING_DATASOURCE_URL="jdbc:postgresql://drs-postgres.internal:5432/dancerush_songs"
   SPRING_DATASOURCE_PASSWORD="afI73c2fy4T2Dz9"
+  SPRING_JPA_HIBERNATE_DDL_AUTO="validate"
 
 [experimental]
   allowed_public_ports = []

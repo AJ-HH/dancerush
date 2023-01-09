@@ -1,9 +1,17 @@
+-- CREATE DATABASE dancerush_songs
+--     WITH
+--     OWNER = postgres
+--     ENCODING = 'UTF8'
+--     LC_COLLATE = 'English_United States.1252'
+--     LC_CTYPE = 'English_United States.1252'
+--     TABLESPACE = pg_default
+--     CONNECTION LIMIT = -1
+--     TEMPLATE template0;
+
 CREATE DATABASE dancerush_songs
     WITH
     OWNER = postgres
     ENCODING = 'UTF8'
-    LC_COLLATE = 'English_United States.1252'
-    LC_CTYPE = 'English_United States.1252'
     TABLESPACE = pg_default
     CONNECTION LIMIT = -1
     TEMPLATE template0;
@@ -50,7 +58,6 @@ GRANT ALL ON TABLE public.song TO postgres;
 
 INSERT INTO public.song VALUES
 (1,'BEMANI','1-2-3 Jump!','まろん (IOSYS) ft. Renko',110,4,204,8,305,true,false,false,false,'1-2-3_Jump.png','uoHwhw45jDI&t=22s','vyZFiuApLTU&t=22s'),
-(2,'EDM/S','41 Days','Merk & Kremont',128,5,162,8,268,true,false,false,false,'41%20Days.jpg','IiNa9LujdJU','tDHBBfcceMQ'),
 (3,'BEMANI','50th Memorial Songs -Beginning Story-','BEMANI Sound Team',135,2,155,7,366,true,false,false,false,'50th_Memorial_Songs_-Beginning_Story-.png','Lm-sVE9nZeU','RFah29JLfLs'),
 (4,'BEMANI','50th Memorial Songs -Flagship medley-','BEMANI Sound Team',155,3,235,7,357,true,false,false,false,'50th_Memorial_Songs_-Flagship_medley-.png','kMoDpgmkZXE','P1hFH7owLr8'),
 (5,'BEMANI','50th Memorial Songs -The BEMANI History-','BEMANI Sound Team',136,4,169,8,342,true,false,false,false,'50th_Memorial_Songs_-The_BEMANI_History-.png','Bz059ETgvm0','_AVj3ELY4MY'),
@@ -215,7 +222,6 @@ INSERT INTO public.song VALUES
 (164,'EDM/BEMANI','Nocturnus','KAN TAKAHIKO',108,4,158,8,302,false,false,false,false,'Nocturnus.png','YXeH46u_VjA','l-UGwSN3hMo'),
 (165,'BEMANI','Oboro Cybernetics','Tanchiky',121,5,266,9,391,false,false,false,false,'Oboro_Cybernetics.png','yuXZBp2f9hY&t=55s','9LFYE0rJYus&t=55s'),
 (166,'EDM/BEMANI','Official Bootleg','Blacklolita',140,6,219,9,386,false,false,false,false,'official_bootleg_jacket.png','o4YKvjP4tuM','ZGMQZYy_wJ8'),
-(167,'EDM/S','One Word','Deadly Zoo',107,2,155,7,284,true,false,false,false,'One%20Word.jpeg','9M8BcGwbviE','JSE42lDRVrE'),
 (168,'EDM/BEMANI','Oppress','BEMANI Sound Team \"SYUNN\"',128,4,279,8,371,true,false,false,false,'Oppress.jpg','76xo14Tdo5o','0vDUD-kg3TU'),
 (169,'EDM/BEMANI','Orange Lullaby','Yooh',120,5,246,8,358,false,false,false,false,'Orange_Lullaby_Jacket.png','1oYAC8UehOw','58s98aIabyM'),
 (170,'BEMANI','Our Soul','CaZ',150,6,283,9,407,false,false,false,false,'Our_Soul.png','DCirpwYFcs8','HgTMpoHAXeY'),
@@ -292,8 +298,6 @@ INSERT INTO public.song VALUES
 (241,'Lesson','Tステップレッスン','オリジナル',106,3,97,-1,-1,true,false,false,false,'T-step%20lesson.jpg','HM30f2Tw444',NULL),
 (242,'Lesson','Tステップレッスン 炎の特訓編','オリジナル',106,8,162,-1,-1,true,false,false,false,'T-step%20lesson%20honoo%20no%20tokkun%20hen.jpg','kSWPanaFGi0',NULL),
 (243,'Lesson','Tステップレッスン応用編','オリジナル',106,5,74,-1,-1,true,false,false,false,'T-step%20lesson%20ouyou%20hen.jpg','liuE8ANMGPw',NULL),
-(244,'POPS','U.S.A.','DA PUMP',140,3,183,7,324,true,true,false,false,'USA.jpg','akOhjql3fnA','HVdZkhJvbJY'),
-(245,'POPS','U.S.A. ANOTHER EDITION','DA PUMP',140,3,206,7,313,true,true,false,false,'USA_Another_Edition.png','901843387777421322/USA_ANOTHER_Easy.mp4','901843527556796436/USA_ANOTHER_Normal.mp4'),
 (246,'EDM/BEMANI','UCHU','Ken Plus Ichiro',138,7,280,9,421,false,false,false,false,'UCHU.png','YAzXhHkgi2Q','NMp1EO6kHJc'),
 (247,'EDM/BEMANI','Undercover','Hommarju',130,4,193,9,391,false,false,false,false,'Undercover.jpg','ftCuRupsdy8','GZ8issBkEDY'),
 (248,'POPS','Valkyrie','ONEUS',128,5,-1,8,293,true,false,false,true,'ONEUS_-_LIGHT_US.jpg','false','CORQbILsY0Y'),
