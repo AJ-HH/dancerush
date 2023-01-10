@@ -32,6 +32,6 @@ To view the songs in a way that is more easy to view and search, I have created 
 Which returns all the songs
 
 ## /songs 
-Returns songs based on input e.g. /songs?song=age returns songs with the string 'age' in them (case insensitive)
+Returns songs based on song name e.g. /songs?song=age returns songs with the string 'age' in them (case insensitive)
 
 The other component is the frontend seen here https://github.com/AJ-HH/dancerush-frontend
